@@ -6,6 +6,8 @@ import com.sky.entity.Dish;
 import com.sky.result.PageResult;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.util.List;
+
 public interface DishService {
     /**
      * 新增菜品和对应口味数据
@@ -19,4 +21,6 @@ public interface DishService {
      * @return
      */
     PageResult pageQuery(DishPageQueryDTO dishPageQueryDTO);
+
+    void deleteBatch(List<Long> ids);
 }
