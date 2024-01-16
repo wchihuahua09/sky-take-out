@@ -41,7 +41,7 @@ AutoFillAspect {
        //获取拦截方法的类型
         MethodSignature signature = (MethodSignature)joinPoint.getSignature();  //方法签名对象
         AutoFill autoFill = signature.getMethod().getAnnotation(AutoFill.class);
-        OperationType operationType = autoFill.value();
+           OperationType operationType = autoFill.value();
 
         //获取被拦截方法的参数--实体对象
         Object[] args = joinPoint.getArgs();
