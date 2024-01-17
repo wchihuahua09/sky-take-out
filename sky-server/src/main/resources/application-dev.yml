@@ -12,3 +12,8 @@ sky:
     access-key-id: LTAI5tCnHtyv1jWLDiGKg7MP
     access-key-secret: KRgm1kCIxT6i7pNOiGXMOfM7K2Nc2f
     bucket-name: guan-weiwei
+  redis:
+    host: localhost
+    port: 6379
+    password: 123456
+    database: 0
