@@ -1,8 +1,9 @@
 package com.sky.service;
 
 import com.sky.dto.ShoppingCartDTO;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Service;
+import com.sky.entity.ShoppingCart;
+
+import java.util.List;
 
 
 public interface ShoppingCartService {
@@ -13,4 +14,6 @@ public interface ShoppingCartService {
      * @return
      */
     void addShoppingCart(ShoppingCartDTO shoppingCartDTO);
+
+    List<ShoppingCart> showShoppingCart();
 }
