@@ -24,7 +24,7 @@ public interface DishMapper {
     Integer countByCategoryId(Long categoryId);
 
     /**
-     * 插入菜品数据
+     * 新增菜品
      * @param dish
      */
     //TODO 这个自动填充不知道为什么失效了
