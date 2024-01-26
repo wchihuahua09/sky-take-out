@@ -3,7 +3,7 @@
 <mapper namespace="com.sky.mapper.OrderMapper">
 
     <insert id="insert" parameterType="Orders" useGeneratedKeys="true" keyProperty="id">
-        insert into orders
+        insert into sky_take_out.orders
         (number, status, user_id, address_book_id, order_time, checkout_time, pay_method, pay_status, amount, remark,
          phone, address, consignee, estimated_delivery_time, delivery_status, pack_amount, tableware_number,
          tableware_status)
@@ -13,7 +13,7 @@
     </insert>
 
     <update id="update" parameterType="com.sky.entity.Orders">
-        update orders
+        update sky_take_out.orders
         <set>
             <if test="cancelReason != null and cancelReason!='' ">
                 cancel_reason=#{cancelReason},
